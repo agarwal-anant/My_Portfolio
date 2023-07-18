@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anant Agarwal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+   
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <a href="index.html"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+          
+            
+            <nav id="myname">
+                <div class="max-width">
+                    <div class="home-content">
+                        <div class="text1">Hello, My name is</div>
+                        <div class="text2">Anant Agarwal</div>
+                        <div class="text3">I'm a <span class="text33"></span></div>
+                        <div class="cv">
+                            <a href="my resume.pdf" download class="btn btn2 cv">Download Resume</a>
+                            </div> 
+                        <script>
+                            const text = document.querySelector(".text33");
+                            const textLoad = () =>{
+                                setTimeout(() =>{
+                                    text.textContent = "Web developer"
+                                },0);
+                                setTimeout(() =>{
+                                    text.textContent = "Musician"
+                                },4000);
+                                setTimeout(() =>{
+                                    text.textContent = "Social Worker"
+                                },8000);
+                            }
+
+                            textLoad();
+                            setInterval(textLoad,12000);  
+                        </script>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="myimage.jpeg" alt="" id="image">
+                </div>
+            </nav>
+        </div>
+    </div>
+
+   
+
+
+    <div id="about">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="myimage2.jpg" alt="aboutimage" id="aboutimage">
+
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am a passionate web developer and musician, currently in my second year at Shri Ramdeobaba College of Engineering, specializing in AIML. Embracing the best of both worlds,
+                         I create captivating web experiences through 
+                        coding while expressing emotions through the power of music.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('extracurricular')">Extracurricular</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Knowledge of HTML,CSS,JS</span></li>
+                            <li><span>knowledge of C, Python</span></li>
+                            <li><span>Leadership Quality</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Shri Ramdeobaba College Of Engineering and Management, Nagpur- B.Tech.<br><span class="edu">December 2021 - Present</span></li>
+                            <li>Seth Kesarimal Porwal College, Kamptee-Higher Education<br><span class="edu">April 2020-August 2021, Secured 90%</span></li>
+                            <li>Kendriya Vidyalaya, Kamptee-Secondary School Education<br><span class="edu">April 2018-March 2019, Secured 86%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="extracurricular">
+                        <ul>
+                            <li><span>Performed at TEDx Ambazari Lake</span></li>
+                            <li><span>Performed at state level in RTMNU university</span></li>
+                            <li><span>Music Club, RCOEM.</span></li>
+                            <li><span>Association of Computer and Machinery (ACM) member.</span></li>
+                            <li><span>Coordinator of Nagpur leaders.</span></li>
+                        </ul>
+                    </div>
+                 
+                </div>
+            </div>
+
+
+
+            
+            <div id="portfolio">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <nav id="imagework">
+                    <div class="work">
+                        <a href="https://github.com/agarwal-anant/The_Multiplication_Game"><img src="Work1.png" alt=""></a>
+                    </div>
+                    <div class="work">
+                        <a href="https://github.com/agarwal-anant/The_2048_Game"><img src="Work2.png" alt=""></a>
+                    </div>
+                </nav>
+                </div>
+
+            </div>
+            
+    </div>
+
+
+    <div id="contact">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle">Contact me</h1>
+                <br>
+                <div class="socialmedia">
+                    <a href= "mailto:anant9874@gmail.com"><img src="Gmail.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/anant-agarwal-1565b0231/"><img src="linkedin.svg" alt=""></a>
+                    <a href=" https://twitter.com/agarwal262003?t=cLtcI1abOO09PxNy00KbEw&s=08"><img src="twitter.svg" alt=""></a>
+                    <a href="https://instagram.com/anantse_bhi_aage?igshid=MzNlNGNkZWQ4Mg=="><img src="instagram.svg" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="copyright">
+        <p>Copyright ©️ Made with ❤️ by Anant</p>
+    </div>
+    
+   <script>
+    var typed = new typed(".typing", {
+        strings: ["Developer" ,"Musician", "Social Worker", "Leader"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    
+    });
+    
+    
+   </script>
+    <script> 
+        var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby273bdGmJcoti8w_TO6NhDKlwF2Pl4zp6cbWxYKOsjTBN_rZS3iaNXpC-89tgHaVvBCg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Form Successfully Submitted!!")
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
