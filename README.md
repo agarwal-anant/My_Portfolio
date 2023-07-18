@@ -29,4 +29,4 @@ This portfolio website is released under the [MIT License](LICENSE). You are fre
 
 Thank you for visiting my portfolio website. I hope you enjoy exploring my work and learning more about my journey as a web developer.
 
-\Anant Agarwal
+Anant Agarwal
